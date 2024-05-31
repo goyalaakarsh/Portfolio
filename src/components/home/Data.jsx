@@ -4,12 +4,12 @@ import ResumePDF from '../../assets/Resume.pdf';
 const Data = () => {
   return (
     <div className="home_data">
-      <h1 className="home_title"><span>Hi!👋🏻 </span> <br/> I'm Aakarsh Goyal</h1>
+      <h1 className="home_title"><span>Hi!👋🏻 </span> <br /> I'm Aakarsh Goyal</h1>
       <p className="home_subtitle">
         Student
       </p>
       <p className="home_description">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, sunt accusantium. Quod ipsam vero inventore saepe cumque eligendi dolore, vel, optio excepturi nulla cum ipsum facilis odit quas eos deleniti.
+        First-year B.Tech student focused on Full Stack Web Development with MERN Stack. Skilled in C++, Figma, and Blender. Seeking tech collaborations and learning opportunities.
       </p>
 
       <div className="home_btn-container">
