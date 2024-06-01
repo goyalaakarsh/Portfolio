@@ -1,6 +1,6 @@
 import React from 'react'
 import VanillaTilt from 'vanilla-tilt';
-import '../../../vanillla-tilt'
+import '../../vanillla-tilt'
 
 const Frontend = () => {
     return (

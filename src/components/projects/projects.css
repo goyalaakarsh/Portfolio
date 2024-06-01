@@ -49,10 +49,9 @@
     transition: 0.2s;
 }
 
-.project_card:hover {
-    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.2);
-    transform: scale(1.03);
-}
+/* .project_card:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+} */
 
 .project_card img {
     width: 240px;

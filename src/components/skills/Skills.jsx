@@ -7,6 +7,7 @@ import Design from './Design'
 import VanillaTilt from 'vanilla-tilt';
 
 
+
 const Skills = () => {
   return (
     <section className="skills section" id='skills'>
