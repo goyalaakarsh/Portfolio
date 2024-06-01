@@ -24,7 +24,7 @@ const Backend = () => {
                         <i class='bx bxs-badge-check'></i>
 
                         <div>
-                            <h3 className="skills_name">React.js</h3>
+                            <h3 className="skills_name">Express.js</h3>
                             <span className="skills_level">Intermediate</span>
                         </div>
                     </div>
