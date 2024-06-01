@@ -9,7 +9,7 @@ const Header = () => {
     return (
         <header className="header">
             <nav className="nav container">
-                <a href="index.html" className="nav_logo">Aakarsh</a>
+                <a href="/" className="nav_logo">Aakarsh</a>
 
                 <div className={Toggle ? "nav_menu show_menu" : "nav_menu"}>
 
