@@ -89,6 +89,7 @@
     background-color: var(--title-color);
     color: var(--container-color);
     /* padding: 0.2rem; */
+    padding-top: 0.02rem;
     width: 1.1rem;
     height: 1.1rem;
     border-radius: 50%;
