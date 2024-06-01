@@ -35,6 +35,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem 3rem;
+    transition: 0.2s;
 }
 
 .project_card {
