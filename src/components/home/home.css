@@ -97,16 +97,30 @@
     font-weight: var(--font-normal);
 }
 
+@keyframes upDown {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .home_scroll {
     margin-top: 2.5rem;
     display: flex;
     justify-content: center;
     transition: 0.3s;
+    animation: upDown 1.5s infinite;
 }
 
 .home_scroll:hover {
-    transform: translateY(10px);
+    animation-play-state: paused; /* Pauses the animation on hover */
 }
+
 
 
 .home_scroll-btn {

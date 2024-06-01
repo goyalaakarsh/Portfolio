@@ -1,8 +1,10 @@
 import React from 'react'
+import VanillaTilt from 'vanilla-tilt';
+import '../../../vanillla-tilt'
 
 const Frontend = () => {
     return (
-        <div className="skills_content">
+        <div className="skills_content" data-tilt>
             <h3 className="skills_title">
                 Frontend
             </h3>
@@ -77,6 +79,8 @@ const Frontend = () => {
             </div>
         </div>
     )
+
+    
 }
 
 export default Frontend

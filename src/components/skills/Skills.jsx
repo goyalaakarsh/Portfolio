@@ -4,6 +4,7 @@ import Frontend from './Frontend'
 import Backend from './Backend'
 import Languages from './ProgrammingLang'
 import Design from './Design'
+import VanillaTilt from 'vanilla-tilt';
 
 
 const Skills = () => {

@@ -1,8 +1,10 @@
 import React from 'react'
+import VanillaTilt from 'vanilla-tilt';
+import '../../../vanillla-tilt'
 
 const Design = () => {
     return (
-        <div className="skills_content">
+        <div className="skills_content" data-tilt>
             <h3 className="skills_title">
                 Design
             </h3>

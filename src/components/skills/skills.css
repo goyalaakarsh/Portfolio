@@ -63,12 +63,8 @@
 .skills_name {
     font-size: 0.9rem;
     font-weight: 500;
-    transition: 0.3s;
 }
 
-.skills_name:hover {
-    transform: translateX(0.5rem);
-}
 
 .skills_level {
     font-size: 0.8rem;
