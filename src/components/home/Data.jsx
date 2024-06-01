@@ -9,7 +9,7 @@ const Data = () => {
         Student
       </p>
       <p className="home_description">
-        First-year B.Tech student focused on Full Stack Web Development with MERN Stack. Skilled in C++, Figma, and Blender. Seeking tech collaborations and learning opportunities.
+      A second-year student and have been honing my skills in web development, particularly with the MERN stack, along with a strong focus on design.
       </p>
 
       <div className="home_btn-container">
