@@ -15,7 +15,7 @@ const Languages = () => {
                     <div className="skills_data">
                         <i class='bx bxs-badge-check'></i>
 
-                        <div classname="skills_details">
+                        <div >
                             <h3 className="skills_name">C</h3>
                             <span className="skills_level">Intermediate</span>
                         </div>

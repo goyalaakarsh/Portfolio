@@ -12,16 +12,16 @@ const Backend = () => {
             <div className="skills_box">
                 <div className="skills_group">
                     <div className="skills_data">
-                        <i class='bx bxs-badge-check'></i>
+                        <i className='bx bxs-badge-check'></i>
 
-                        <div classname="skills_details">
+                        <div>
                             <h3 className="skills_name">Node.js</h3>
                             <span className="skills_level">Intermediate</span>
                         </div>
                     </div>
 
                     <div className="skills_data">
-                        <i class='bx bxs-badge-check'></i>
+                        <i className='bx bxs-badge-check'></i>
 
                         <div>
                             <h3 className="skills_name">Express.js</h3>
@@ -33,7 +33,7 @@ const Backend = () => {
 
                 <div className="skills_group">
                     <div className="skills_data">
-                        <i class='bx bxs-badge-check'></i>
+                        <i className='bx bxs-badge-check'></i>
 
                         <div>
                             <h3 className="skills_name">SQL</h3>
@@ -42,7 +42,7 @@ const Backend = () => {
                     </div>
 
                     <div className="skills_data">
-                        <i class='bx bxs-badge-check'></i>
+                        <i className='bx bxs-badge-check'></i>
 
                         <div>
                             <h3 className="skills_name">MongoDB</h3>

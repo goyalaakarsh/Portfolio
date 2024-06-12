@@ -1,15 +1,28 @@
 import React from 'react';
 import ResumePDF from '../../assets/Resume.pdf';
+import Typical from 'react-typical';
 
 const Data = () => {
   return (
     <div className="home_data">
-      <h1 className="home_title"><span>Hi!👋🏻 </span> <br /> I'm Aakarsh Goyal</h1>
+      <h1 className="home_title">
+        <span>Hi!👋🏻 </span>
+        <br /> 
+        I'm Aakarsh Goyal
+      </h1>
       <p className="home_subtitle">
-        Student
+        <Typical
+          steps={[
+            'Student', 2000, 
+            'Full Stack Developer', 2000, 
+            'Designer', 2000, 
+          ]}
+          loop={Infinity}
+          wrapper="span"
+        />
       </p>
       <p className="home_description">
-      A second-year student and have been honing my skills in web development, particularly with the MERN stack, along with a strong focus on design.
+        A second-year student and have been honing my skills in web development, particularly with the MERN stack, along with a strong focus on design.
       </p>
 
       <div className="home_btn-container">
@@ -20,10 +33,8 @@ const Data = () => {
           Download Résumé <i className="uil uil-file-download-alt"></i>
         </a>
       </div>
-
-
     </div>
-  )
+  );
 }
 
-export default Data
+export default Data;
