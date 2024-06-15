@@ -1,60 +1,76 @@
-import React from 'react'
-import VanillaTilt from 'vanilla-tilt';
-import '../../vanillla-tilt'
+import { useEffect, useRef } from "react";
+import VanillaTilt from "vanilla-tilt";
+import "../../vanillla-tilt"; // Ensure this path is correct
 
 const Design = () => {
-    return (
-        <div className="skills_content" data-tilt>
-            <h3 className="skills_title">
-                Design
-            </h3>
+  const tiltRef = useRef(null);
 
-            <div className="skills_box">
-                <div className="skills_group">
-                    <div className="skills_data">
-                        <i class='bx bxs-badge-check'></i>
+  useEffect(() => {
+    if (tiltRef.current) {
+      VanillaTilt.init(tiltRef.current, {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 0.5,
+      });
+    }
 
-                        <div>
-                            <h3 className="skills_name">Figma</h3>
-                            <span className="skills_level">Intermediate</span>
-                        </div>
-                    </div>
+    // Cleanup on unmount
+    return () => {
+      if (tiltRef.current) {
+        tiltRef.current.vanillaTilt.destroy();
+      }
+    };
+  }, []);
 
-                    <div className="skills_data">
-                        <i class='bx bxs-badge-check'></i>
+  return (
+    <div className="skills_content" ref={tiltRef} data-tilt>
+      <h3 className="skills_title">Design</h3>
 
-                        <div>
-                            <h3 className="skills_name">Blender</h3>
-                            <span className="skills_level">Basic</span>
-                        </div>
-                    </div>
+      <div className="skills_box">
+        <div className="skills_group">
+          <div className="skills_data">
+            <i className="bx bxs-badge-check"></i>
 
-                </div>
+            <div>
+              <h3 className="skills_name">Figma</h3>
+              <span className="skills_level">Intermediate</span>
+            </div>
+          </div>
 
-                <div className="skills_group">
-                    <div className="skills_data">
-                        <i class='bx bxs-badge-check'></i>
+          <div className="skills_data">
+            <i className="bx bxs-badge-check"></i>
 
-                        <div>
-                            <h3 className="skills_name">Canva</h3>
-                            <span className="skills_level">Intermediate</span>
-                        </div>
-                    </div>
+            <div>
+              <h3 className="skills_name">Blender</h3>
+              <span className="skills_level">Basic</span>
+            </div>
+          </div>
+        </div>
 
-                    {/* <div className="skills_data">
-                        <i class='bx bxs-badge-check'></i>
+        <div className="skills_group">
+          <div className="skills_data">
+            <i className="bx bxs-badge-check"></i>
+
+            <div>
+              <h3 className="skills_name">Canva</h3>
+              <span className="skills_level">Intermediate</span>
+            </div>
+          </div>
+
+          {/* <div className="skills_data">
+                        <i className='bx bxs-badge-check'></i>
 
                         <div>
                             <h3 className="skills_name">React.js</h3>
                             <span className="skills_level">Basic</span>
                         </div>
                     </div> */}
+        </div>
 
-                </div>
-
-                {/* <div className="skills_group">
+        {/* <div className="skills_group">
                     <div className="skills_data">
-                        <i class='bx bxs-badge-check'></i>
+                        <i className='bx bxs-badge-check'></i>
 
                         <div>
                             <h3 className="skills_name">Bootstrap</h3>
@@ -63,7 +79,7 @@ const Design = () => {
                     </div>
 
                     <div className="skills_data">
-                        <i class='bx bxs-badge-check'></i>
+                        <i className='bx bxs-badge-check'></i>
 
                         <div>
                             <h3 className="skills_name">Tailwind</h3>
@@ -72,13 +88,9 @@ const Design = () => {
                     </div>
 
                 </div> */}
+      </div>
+    </div>
+  );
+};
 
-                
-
-
-            </div>
-        </div>
-    )
-}
-
-export default Design
+export default Design;
