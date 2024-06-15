@@ -24,7 +24,7 @@ const Languages = () => {
   }, []);
 
   return (
-    <div className="skills_content" ref={tiltRef} data-tilt>
+    <div className="skills_content " ref={tiltRef} data-tilt>
       <h3 className="skills_title">Languages</h3>
 
       <div className="skills_box">
