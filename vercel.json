@@ -5,7 +5,4 @@
             "NPM_FLAGS": "--legacy-peer-deps"
         }
     },
-    "scripts": {
-        "build": "npm run build"
-    }
 }
