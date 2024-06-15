@@ -1,10 +1,18 @@
 {
+    "version": 2,
+    "builds": [
+      {
+        "src": "package.json",
+        "use": "@vercel/node"
+      }
+    ],
+    "env": {
+      "CI": "false"
+    },
     "build": {
-      "env": {
-        "CI": "false"
-      },
       "commands": {
-        "install": "npm install --legacy-peer-deps"
+        "install": "npm install --legacy-peer-deps",
+        "build": "npm run build"
       }
     }
   }
