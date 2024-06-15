@@ -106,7 +106,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
-  
+
 }
 
 img {
@@ -124,6 +124,10 @@ img {
 .section_title {
   font-size: var(--h1-font-size);
   color: var(--title-color);
+  /* background: linear-gradient(270deg, rgba(145, 0, 212, 1) 0%, rgba(33, 58, 237, 1) 100%);
+  -webkit-background-clip: text;
+  color: transparent; */
+
 }
 
 .section_subtitle {

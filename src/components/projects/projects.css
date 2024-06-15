@@ -26,6 +26,7 @@
 
 .project_item.active {
     background-color: var(--title-color);
+    /* background: linear-gradient(45deg, rgba(145,0,212,1) 0%, rgba(66,87,238,1) 100%); */
     color: var(--container-color);
 }
 
