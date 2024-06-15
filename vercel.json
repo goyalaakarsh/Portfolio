@@ -1,20 +1,17 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "package.json",
-        "use": "@vercel/static-build",
-        "config": {
-          "distDir": "build"
-        },
-        "env": {
-      "NPM_FLAGS": "--legacy-peer-deps"
-    }
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
       }
-    ],
-    "env": {
-      "CI": "false"
-    },
-    "buildCommand": "npm run build"
-  }
-
+    }
+  ],
+  "env": {
+    "CI": "false",
+    "NPM_FLAGS": "--legacy-peer-deps"
+  },
+  "buildCommand": "npm run build"
+}
