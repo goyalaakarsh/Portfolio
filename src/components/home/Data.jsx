@@ -11,7 +11,7 @@ const Data = () => {
         I'm Aakarsh Goyal
       </h1>
       <p className="home_subtitle">
-        Student
+        Full Stack Developer
         {/* <Typical
           steps={[
             'Student', 2000, 
