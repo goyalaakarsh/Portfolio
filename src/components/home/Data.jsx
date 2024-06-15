@@ -1,6 +1,6 @@
 import React from 'react';
 import ResumePDF from '../../assets/Resume.pdf';
-import Typical from 'react-typical';
+// import Typical from 'react-typical';
 
 const Data = () => {
   return (
@@ -11,7 +11,8 @@ const Data = () => {
         I'm Aakarsh Goyal
       </h1>
       <p className="home_subtitle">
-        <Typical
+        Student
+        {/* <Typical
           steps={[
             'Student', 2000, 
             'Full Stack Developer', 2000, 
@@ -19,7 +20,7 @@ const Data = () => {
           ]}
           loop={Infinity}
           wrapper="span"
-        />
+        /> */}
       </p>
       <p className="home_description">
         A second-year student and have been honing my skills in web development, particularly with the MERN stack, along with a strong focus on design.
