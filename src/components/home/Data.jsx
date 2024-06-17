@@ -1,8 +1,40 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import gsap from 'gsap';
+import { TextPlugin } from 'gsap/TextPlugin';
 import ResumePDF from '../../assets/Resume.pdf';
-// import Typical from 'react-typical';
+
+gsap.registerPlugin(TextPlugin);
 
 const Data = () => {
+  const subtitleRef = useRef(null);
+
+  useEffect(() => {
+    const subtitles = [
+      'Student',
+      'Full Stack Developer',
+      'Designer'
+    ];
+    
+    let currentIndex = 0;
+
+    const typeSubtitle = () => {
+      gsap.to(subtitleRef.current, {
+        duration: 2,
+        text: subtitles[currentIndex],
+        ease: 'none',
+        repeat: 1,
+        repeatDelay: 2,
+        yoyo: true,
+        onComplete: () => {
+          currentIndex = (currentIndex + 1) % subtitles.length;
+          setTimeout(typeSubtitle, 0); // Wait 1 second before changing the text again
+        }
+      });
+    };
+
+    typeSubtitle();
+  }, []);
+
   return (
     <div className="home_data">
       <h1 className="home_title">
@@ -10,17 +42,9 @@ const Data = () => {
         <br /> 
         I'm Aakarsh Goyal
       </h1>
-      <p className="home_subtitle">
-        Full Stack Developer
-        {/* <Typical
-          steps={[
-            'Student', 2000, 
-            'Full Stack Developer', 2000, 
-            'Designer', 2000, 
-          ]}
-          loop={Infinity}
-          wrapper="span"
-        /> */}
+      <p  className="home_subtitle">
+        <span ref={subtitleRef}></span>
+        <div id="cursor"></div>
       </p>
       <p className="home_description">
         A second-year student and have been honing my skills in web development, particularly with the MERN stack, along with a strong focus on design.

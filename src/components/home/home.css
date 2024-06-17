@@ -39,6 +39,28 @@
     top: 1rem;
 }
 
+#cursor {
+    background-color: var(--title-color);
+    width: 2px;
+    height: 1.1rem;
+    margin-bottom: -4px;
+    display: inline-block;
+    animation: 0.7s infinite blink;
+}
+
+@keyframes blink {
+    0% , 100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+}
+
+
+
 .home_social {
     display: grid;
     grid-template-columns: max-content;
