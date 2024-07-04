@@ -10,8 +10,8 @@ const Frontend = () => {
       VanillaTilt.init(tiltRef.current, {
         max: 25,
         speed: 400,
-        glare: true,
-        "max-glare": 0.5,
+        // glare: true,
+        // "max-glare": 0.5,
       });
     }
 
@@ -53,8 +53,8 @@ const Frontend = () => {
             <i className="bx bxs-badge-check"></i>
 
             <div>
-              <h3 className="skills_name">Javascript</h3>
-              <span className="skills_level">Intermediate</span>
+              <h3 className="skills_name">Next.js</h3>
+              <span className="skills_level">Basic</span>
             </div>
           </div>
 

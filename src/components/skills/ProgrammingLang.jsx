@@ -10,8 +10,8 @@ const Languages = () => {
       VanillaTilt.init(tiltRef.current, {
         max: 25,
         speed: 400,
-        glare: true,
-        "max-glare": 0.5,
+        // glare: true,
+        // "max-glare": 0.5,
       });
     }
 

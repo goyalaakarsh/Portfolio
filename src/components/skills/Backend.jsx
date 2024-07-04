@@ -10,8 +10,8 @@ const Backend = () => {
       VanillaTilt.init(tiltRef.current, {
         max: 25,
         speed: 400,
-        glare: true,
-        "max-glare": 0.5,
+        // glare: true,
+        // "max-glare": 0.5,
       });
     }
 
@@ -49,12 +49,12 @@ const Backend = () => {
         </div>
 
         <div className="skills_group">
-          <div className="skills_data">
+        <div className="skills_data">
             <i className="bx bxs-badge-check"></i>
 
             <div>
-              <h3 className="skills_name">Next.js</h3>
-              <span className="skills_level">Basic</span>
+              <h3 className="skills_name">SQL</h3>
+              <span className="skills_level">Intermediate</span>
             </div>
           </div>
 
@@ -68,7 +68,7 @@ const Backend = () => {
           </div>
         </div>
 
-        <div className="skills_group">
+        {/* <div className="skills_group">
         <div className="skills_data">
             <i className="bx bxs-badge-check"></i>
 
@@ -78,16 +78,16 @@ const Backend = () => {
             </div>
           </div>
 
-          {/* <div className="skills_data">
+          <div className="skills_data">
             <i class='bx bxs-badge-check'></i>
 
             <div>
               <h3 className="skills_name">Tailwind</h3>
               <span className="skills_level">Basic</span>
             </div>
-          </div> */}
+          </div>
 
-        </div>
+        </div> */}
       </div>
     </div>
   );
