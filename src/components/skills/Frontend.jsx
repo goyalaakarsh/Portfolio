@@ -1,13 +1,15 @@
 import { useEffect, useRef } from "react";
 import VanillaTilt from "vanilla-tilt";
-import "../../vanillla-tilt"; // Ensure this path is correct
+import "../../vanillla-tilt";
+import ScrollTrigger from 'gsap/ScrollTrigger';
 
 const Frontend = () => {
-  const tiltRef = useRef(null);
+  const tiltAndGsapRef = useRef(null);
 
   useEffect(() => {
-    if (tiltRef.current) {
-      VanillaTilt.init(tiltRef.current, {
+    // Initialize VanillaTilt
+    if (tiltAndGsapRef.current) {
+      VanillaTilt.init(tiltAndGsapRef.current, {
         max: 25,
         speed: 400,
         // glare: true,
@@ -15,16 +17,35 @@ const Frontend = () => {
       });
     }
 
-    // Cleanup on unmount
+    // Cleanup VanillaTilt on unmount
     return () => {
-      if (tiltRef.current) {
-        tiltRef.current.vanillaTilt.destroy();
+      if (tiltAndGsapRef.current) {
+        tiltAndGsapRef.current.vanillaTilt.destroy();
       }
     };
   }, []);
 
+  useEffect(() => {
+    // Register GSAP ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(tiltAndGsapRef.current, {
+      x: -30,
+      y: 30,
+      opacity: 0,
+      // duration: 0.1,
+      scrollTrigger: {
+        trigger: tiltAndGsapRef.current, // Use current to access the DOM element
+        start: "top 80%",
+        end: "top 70%",
+        scrub: 2,
+        markers:true
+      }
+    });
+  }, []);
+
+
   return (
-    <div className="skills_content" ref={tiltRef} data-tilt>
+    <div className="skills_content" ref={tiltAndGsapRef}  data-tilt>
       <h3 className="skills_title">Frontend</h3>
 
       <div className="skills_box">

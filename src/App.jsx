@@ -6,6 +6,7 @@ import Skills from './components/skills/Skills';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import SvgString from './components/svgstring/SvgString';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Home />
         <Skills />
         <Projects />
+        <SvgString/>
         <Contact />
       </main>
       <Footer />
