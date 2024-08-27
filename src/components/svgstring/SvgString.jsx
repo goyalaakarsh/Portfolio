@@ -6,18 +6,18 @@ const SvgString = () => {
   const pathRef = useRef(null); // Reference to the path element
   const svgRef = useRef(null);  // Reference to the SVG container
 
-  const initialPath = "M 10 50 Q 250 50 490 50"; // Define the initial path
+  const initialPath = "M 10 100 Q 250 100 490 100"; // Define the initial path
 
   useEffect(() => {
     const pathElement = pathRef.current;
     const svgElement = svgRef.current;
 
     const updatePath = (x, y) => {
-      const pathString = `M 10 50 Q ${x} ${y} 490 50`;
+      const pathString = `M 10 100 Q ${x} ${y} 490 100`;
       gsap.to(pathElement, {
         attr: { d: pathString },
         duration: 0.5,
-        ease: "elastic.out(1.75,0.2)"
+        ease: "elastic.out(1.75,0.4)"
       });
     };
 
@@ -48,7 +48,7 @@ const SvgString = () => {
 
   return (
     <div id='string'>
-      <svg ref={svgRef} width="500" height="100">
+      <svg ref={svgRef} width="500" height="200">
         <path
           ref={pathRef}
           fill="transparent"

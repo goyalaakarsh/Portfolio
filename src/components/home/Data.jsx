@@ -35,8 +35,24 @@ const Data = () => {
     typeSubtitle();
   }, []);
 
+  const homeRef = useRef(null);
+
+  useEffect(() => {
+      // Create a GSAP timeline animation
+      const navtl = gsap.timeline();
+
+      navtl.from(homeRef.current.children, {
+          y: 30,
+          opacity: 0,
+          duration: 0.5,
+          stagger: 0.2, // Adjust stagger time as needed
+      });
+
+  }, []);
+
+
   return (
-    <div className="home_data">
+    <div className="home_data" ref={homeRef}>
       <h1 className="home_title">
         <span>Hi!👋🏻 </span>
         <br /> 

@@ -38,7 +38,6 @@ const Design = () => {
         start: "top 80%",
         end: "top 70%",
         scrub: 2,
-        markers:true
       }
     });
   }, []);
