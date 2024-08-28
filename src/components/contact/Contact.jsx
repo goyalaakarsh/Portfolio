@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './contact.css';
 import emailjs from '@emailjs/browser';
-import SvgString from '../svgstring/SvgString';
+import SvgString from '../SvgString/SvgString';
 
 const Contact = () => {
     const form = useRef();
