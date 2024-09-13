@@ -6,7 +6,7 @@ import Skills from './components/skills/Skills';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
-import SvgString from './components/SvgString/SvgString';
+import SvgString from './components/SvgString/SvgString.jsx';
 
 const App = () => {
   return (
